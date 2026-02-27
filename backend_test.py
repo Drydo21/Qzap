@@ -22,10 +22,11 @@ class QZapAPITester:
         self.tests_passed = 0
         self.test_results = []
         
-        # Test data - Use proper email format for Supabase
+        # Test data - Use known test credentials
         self.test_timestamp = datetime.now().strftime('%H%M%S')
-        self.test_email = f"test.user.{self.test_timestamp}@gmail.com"
-        self.test_password = "TestPassword123!"
+        # Try with a common test account or create one manually
+        self.test_email = "test@qzap.com"
+        self.test_password = "password123"
         self.test_name = f"Test User {self.test_timestamp}"
     
     def log_test(self, name, status, details=None):
