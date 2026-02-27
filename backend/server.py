@@ -552,13 +552,13 @@ async def get_leaderboard(current_user: dict = Depends(get_current_user)):
             return {
                 "leaders": [{
                     "rank": l["rank"],
-                    "user_id": l["id"],
-                    "name": l["name"],
-                    "avatar_url": l["avatar_url"],
-                    "total_score": l["total_score"],
-                    "quizzes_taken": l["quizzes_taken"],
-                    "avg_score": round(l["avg_score"], 1) if l["avg_score"] else 0
-                } for l in leaders],
+                    "user_id": leader["id"],
+                    "name": leader["name"],
+                    "avatar_url": leader["avatar_url"],
+                    "total_score": leader["total_score"],
+                    "quizzes_taken": leader["quizzes_taken"],
+                    "avg_score": round(leader["avg_score"], 1) if leader["avg_score"] else 0
+                } for leader in leaders],
                 "my_rank": {
                     "rank": user_rank["rank"] if user_rank else 0,
                     "total_score": user_rank["total_score"] if user_rank else 0,
