@@ -36,7 +36,9 @@ export default function QuizTakePage() {
   // Timer logic
   useEffect(() => {
     if (timeLeft <= 0) {
-      handleNextQuestion();
+      if (currentIndex < questions.length - 1) {
+        setCurrentIndex(prev => prev + 1);
+      }
       return;
     }
 
@@ -45,7 +47,8 @@ export default function QuizTakePage() {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [timeLeft, currentIndex]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [timeLeft]);
 
   // Reset timer on question change
   useEffect(() => {
