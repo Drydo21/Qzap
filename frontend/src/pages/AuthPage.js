@@ -38,8 +38,13 @@ export default function AuthPage() {
     e.preventDefault();
     setLoading(true);
     try {
-      await signup(signupData.email, signupData.password, signupData.name);
-      toast.success('Account created! Please login.');
+      const result = await signup(signupData.email, signupData.password, signupData.name);
+      if (result.access_token) {
+        toast.success('Account created! Logging you in...');
+        navigate('/dashboard');
+      } else {
+        toast.success('Account created! Please login with your credentials.');
+      }
     } catch (error) {
       toast.error(error.response?.data?.detail || 'Signup failed');
     } finally {
