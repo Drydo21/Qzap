@@ -1,0 +1,162 @@
+{
+  "identity": {
+    "name": "QZap",
+    "archetype": "Vibrant Play + Swiss Clarity",
+    "description": "A high-energy, mobile-first quiz platform for students that feels like a game, not a test.",
+    "target_audience": "Students (Mobile-first)",
+    "tone": "Encouraging, Kinetic, Clear, Social"
+  },
+  "typography": {
+    "font_family": {
+      "heading": "Manrope, sans-serif",
+      "body": "Inter, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-4xl md:text-5xl font-extrabold tracking-tight",
+      "h2": "text-3xl font-bold tracking-tight",
+      "h3": "text-2xl font-semibold",
+      "body_lg": "text-lg leading-relaxed",
+      "body": "text-base leading-relaxed",
+      "caption": "text-sm text-muted-foreground"
+    },
+    "imports": [
+      "@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Inter:wght@400;500;600&display=swap');"
+    ]
+  },
+  "colors": {
+    "palette": {
+      "background": "#F8F9FC",
+      "foreground": "#0F172A",
+      "card": "#FFFFFF",
+      "card_foreground": "#0F172A",
+      "primary": "#4F46E5",
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#F59E0B",
+      "secondary_foreground": "#FFFFFF",
+      "accent": "#E0E7FF",
+      "accent_foreground": "#3730A3",
+      "destructive": "#EF4444",
+      "muted": "#F1F5F9",
+      "muted_foreground": "#64748B",
+      "border": "#E2E8F0",
+      "input": "#E2E8F0",
+      "ring": "#4F46E5"
+    },
+    "gradients": {
+      "hero": "bg-gradient-to-br from-indigo-500 to-violet-600",
+      "gold": "bg-gradient-to-b from-yellow-300 to-yellow-500",
+      "glass": "bg-white/80 backdrop-blur-xl border border-white/20"
+    },
+    "usage_rules": {
+      "background": "Use off-white #F8F9FC for main app background to reduce eye strain.",
+      "cards": "Use pure white #FFFFFF for cards with shadow-sm.",
+      "primary_action": "Use Indigo #4F46E5 for primary buttons only.",
+      "gamification": "Use Amber #F59E0B for points, trophies, and streaks."
+    }
+  },
+  "layout": {
+    "spacing": {
+      "container_padding": "p-4 md:p-8",
+      "section_gap": "gap-6 md:gap-12",
+      "mobile_safe_area": "pb-24"
+    },
+    "grid_systems": {
+      "bento_dashboard": "grid grid-cols-1 md:grid-cols-3 gap-4",
+      "quiz_options": "grid grid-cols-2 gap-3"
+    },
+    "radius": {
+      "default": "rounded-2xl",
+      "button": "rounded-full",
+      "card": "rounded-3xl"
+    }
+  },
+  "components": {
+    "buttons": {
+      "base": "h-12 px-6 font-semibold transition-all duration-200 active:scale-95",
+      "primary": "bg-primary text-primary-foreground shadow-lg shadow-indigo-500/30 hover:bg-primary/90",
+      "secondary": "bg-white border-2 border-slate-200 text-slate-700 hover:border-indigo-200 hover:bg-indigo-50",
+      "ghost": "hover:bg-slate-100 text-slate-600"
+    },
+    "cards": {
+      "base": "bg-white border border-slate-100 shadow-sm rounded-3xl p-6 relative overflow-hidden",
+      "interactive": "hover:shadow-md hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+    },
+    "inputs": {
+      "base": "h-12 bg-slate-50 border-transparent focus:bg-white focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 transition-all rounded-xl"
+    },
+    "navigation": {
+      "mobile_bottom_bar": "fixed bottom-0 left-0 right-0 h-16 bg-white/90 backdrop-blur-lg border-t border-slate-200 flex justify-around items-center z-50",
+      "header": "sticky top-0 z-40 w-full bg-white/80 backdrop-blur-md border-b border-slate-100"
+    }
+  },
+  "visual_enhancers": {
+    "shadows": {
+      "soft": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+      "glow": "shadow-[0_0_20px_rgba(79,70,229,0.3)]"
+    },
+    "micro_interactions": {
+      "click": "active:scale-95 transition-transform",
+      "hover_lift": "hover:-translate-y-1 transition-transform duration-300 ease-out"
+    },
+    "glassmorphism": "bg-white/70 backdrop-blur-lg border border-white/40"
+  },
+  "media": {
+    "image_urls": {
+      "hero_student": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwxfHxzdHVkZW50JTIwc3R1ZHlpbmclMjBoYXBweXxlbnwwfHx8fDE3NzIxNjUwNTd8MA&ixlib=rb-4.1.0&q=85",
+      "friends_studying": "https://images.pexels.com/photos/5965583/pexels-photo-5965583.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "books_shelf": "https://images.unsplash.com/photo-1633544861856-820e8bdbb5fd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwyfHxzdGFjayUyMG9mJTIwYm9va3MlMjBsaWJyYXJ5JTIwbWluaW1hbGlzdHxlbnwwfHx8fDE3NzIxNjUwNTd8MA&ixlib=rb-4.1.0&q=85",
+      "trophy_gold": "https://images.unsplash.com/photo-1578269174936-2709b6aeb913?crop=entropy&cs=srgb&fm=jpg&ixid=M3w8NTYxOTB8MHwxfHNlYXJjaHwyfHxnb2xkJTIwdHJvcGh5JTIwbWluaW1hbGlzdHxlbnwwfHx8fDE3NzIxNjUwNjB8MA&ixlib=rb-4.1.0&q=85",
+      "placeholder_avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed="
+    },
+    "icons": {
+      "library": "lucide-react",
+      "preferred_icons": ["BookOpen", "Trophy", "Users", "Zap", "Camera", "Timer", "LayoutDashboard", "Settings"]
+    }
+  },
+  "motion": {
+    "page_transition": {
+      "initial": { "opacity": 0, "x": 20 },
+      "animate": { "opacity": 1, "x": 0 },
+      "exit": { "opacity": 0, "x": -20 },
+      "transition": { "duration": 0.3, "ease": "easeOut" }
+    },
+    "stagger": {
+      "container": {
+        "hidden": { "opacity": 0 },
+        "show": {
+          "opacity": 1,
+          "transition": { "staggerChildren": 0.1 }
+        }
+      },
+      "item": {
+        "hidden": { "y": 20, "opacity": 0 },
+        "show": { "y": 0, "opacity": 1 }
+      }
+    }
+  },
+  "accessibility": {
+    "contrast": "Ensure text-slate-900 on white backgrounds. Use text-white on primary buttons.",
+    "focus_states": "focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500",
+    "reduced_motion": "Use prefers-reduced-motion media query to disable complex animations."
+  },
+  "instructions_to_main_agent": [
+    "Install 'lucide-react', 'framer-motion', 'clsx', 'tailwind-merge' if missing.",
+    "Use 'Manrope' for all Headings (H1-H3) and 'Inter' for Body text.",
+    "Implement the mobile navigation bar as a fixed bottom component for screens < md.",
+    "Use the 'Bento' grid layout for the dashboard: Large block for 'Current Level/Points', smaller blocks for 'Quick Actions'.",
+    "For the Quiz Interface: Display one question at a time (Card Stack style) with a progress bar at the top.",
+    "Use 'sonner' for all toast notifications (Success/Error).",
+    "Ensure the 'Camera' upload button is prominent (Floating Action Button style on mobile dashboard)."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. Avoid this.",
+    "Don't make generic centered layouts. Use grids and negative space.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Every interaction needs micro-animations - hover states, transitions.",
+    "Use 2-3x more spacing than feels comfortable (p-6, p-8).",
+    "NEVER use AI assistant Emoji characters like 🤖🧠 in the UI.",
+    "Components MUST use named exports (export const ComponentName = ...).",
+    "Pages MUST use default exports (export default function PageName() {...})."
+  ]
+}
