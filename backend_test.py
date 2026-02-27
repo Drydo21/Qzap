@@ -415,8 +415,9 @@ class QZapAPITester:
         self.test_health_endpoint()
         
         # Auth flow tests
-        self.test_signup()
-        if not self.access_token:
+        signup_success = self.test_signup()
+        if not self.access_token and signup_success:
+            # Try login if signup didn't provide token
             self.test_login()
         
         # Authenticated endpoints
